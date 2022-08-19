@@ -8,18 +8,14 @@
   <title>RainT</title>
 
   <!-- 
-    - favicon link
+    - Image d'url
   -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="assets/images/newsletter-img.png" type="image/svg+xml">
 
-  <!-- 
-    - custom css link
-  -->
+  
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!-- 
-    - google font link
-  -->
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -82,9 +78,11 @@
             <a href="#gears" class="navbar-link">Adversaires</a>
           </li>
 
-          <li>
-            <a href="#tournament" class="navbar-link">Classement</a>
-          </li>
+          <!-- 
+            <li>
+              <a href="index.html#tournament" class="navbar-link">Classement</a>
+            </li>
+            -->
 
 
           <li>
@@ -151,26 +149,24 @@
 
             <figure class="about-banner">
 
+              <!--   
+                - Mettre le logo raint
+              -->
+
               <img src="./assets/images/about-img.png" alt="M shape" class="about-img">
-
-              <img src="./assets/images/character-1.png" alt="Game character" class="character character-1">
-
-              <img src="./assets/images/character-2.png" alt="Game character" class="character character-2">
-
-              <img src="./assets/images/character-3.png" alt="Game character" class="character character-3">
 
             </figure>
 
             <div class="about-content">
 
-              <p class="about-subtitle">Découvre nous ..</p>
+              <p class="about-subtitle">Découvrez nous ..</p>
 
               <h2 class="about-title">RainT c'est quoi ?
               </h2>
 
               <p class="about-text">
                 RainT c'est une série d’épisodes qui raconte les aventures d’une équipe de foot qui veut défier les meilleurs équipes 
-                de la région d'Ile-de-France lors de matchs en cinq contre cinq principalement en five. 
+                de la région Ile-de-France lors de matchs en cinq contre cinq principalement en five. 
               </p>
               <p>Mais avant tout pour défier toutes ces équipes de folies il faut une équipe, et une bonne ! Cette équipe la voici !
               </p>
@@ -187,7 +183,25 @@
           </div>
         </section>
 
-
+        <!-- Animation -->
+          <div class="canvas">
+            <svg width="43px" height="84px" viewBox="0 0 43 84" id="athlete_1">
+              <circle id="ball" fill="#FFE100" cx="33" cy="26" r="7"></circle>
+              <circle id="head" fill="#57FFFD" cx="16" cy="6" r="6"></circle>
+              <path d="M9.1626983,14.8622737 C10.396496,13.7564214 12.2931571,13.8601417 13.3990093,15.0939395 C14.5048615,16.3277372 14.4011412,18.2243982 13.1673435,19.3302505 C4.82578538,26.8067846 4.4493534,41.3194559 13.1078434,48.6783711 C14.3703234,49.7513623 14.5239345,51.6446358 13.4509432,52.9071158 C12.377952,54.1695959 10.4846785,54.3232069 9.22219846,53.2502157 C-2.29431791,43.4622426 -1.80752709,24.6948809 9.1626983,14.8622737 Z" id="body" fill="#57FFFD" fill-rule="nonzero"></path>
+              <path d="M22.1253143,77.4381385 C23.7821686,77.4381385 25.1253143,78.7812843 25.1253143,80.4381385 C25.1253143,82.0949928 23.7821686,83.4381385 22.1253143,83.4381385 L16,83.4381385 C14.3431458,83.4381385 13,82.0949928 13,80.4381385 L13,66 C13,64.3431458 14.3431458,63 16,63 C17.6568542,63 19,64.3431458 19,66 L19,77.4381385 L22.1253143,77.4381385 Z" id="leg_down" fill="#57FFFD" fill-rule="nonzero"></path>
+              <path d="M22.1253143,77.4381385 C23.7821686,77.4381385 25.1253143,78.7812843 25.1253143,80.4381385 C25.1253143,82.0949928 23.7821686,83.4381385 22.1253143,83.4381385 L16,83.4381385 C14.3431458,83.4381385 13,82.0949928 13,80.4381385 L13,66 C13,64.3431458 14.3431458,63 16,63 C17.6568542,63 19,64.3431458 19,66 L19,77.4381385 L22.1253143,77.4381385 Z" id="leg_up" fill="#57FFFD" fill-rule="nonzero"></path>
+          </svg>
+          
+          <svg width="340px" height="82px" viewBox="0 0 340 82" id="athlete_2">
+              <circle id="ball" fill="#FFE100" cx="333" cy="41" r="7"></circle>
+              <circle id="head" fill="#57FFFD" cx="41" cy="6" r="6"></circle>
+              <path d="M34.1626983,14.8622737 C35.396496,13.7564214 37.2931571,13.8601417 38.3990093,15.0939395 C39.5048615,16.3277372 39.4011412,18.2243982 38.1673435,19.3302505 C29.8257854,26.8067846 29.4493534,41.3194559 38.1078434,48.6783711 C39.3703234,49.7513623 39.5239345,51.6446358 38.4509432,52.9071158 C37.377952,54.1695959 35.4846785,54.3232069 34.2221985,53.2502157 C22.7056821,43.4622426 23.1924729,24.6948809 34.1626983,14.8622737 Z" id="body" fill="#57FFFD" fill-rule="nonzero"></path>
+              <path d="M6.74448494,55.5571751 C6.68666156,57.2130201 5.29745891,58.5084725 3.64161397,58.4506491 C1.98576903,58.3928257 0.690316602,57.0036231 0.748139981,55.3477782 L0.961910368,49.2261952 C1.01973375,47.5703503 2.4089364,46.2748978 4.06478134,46.3327212 L18.4941245,46.836605 C20.1499695,46.8944284 21.4454219,48.283631 21.3875985,49.9394759 C21.3297751,51.5953209 19.9405725,52.8907733 18.2847276,52.8329499 L6.85355684,52.4337647 L6.74448494,55.5571751 Z" id="leg_down" fill="#57FFFD" fill-rule="nonzero"></path>
+              <path d="M6.74448494,55.5571751 C6.68666156,57.2130201 5.29745891,58.5084725 3.64161397,58.4506491 C1.98576903,58.3928257 0.690316602,57.0036231 0.748139981,55.3477782 L0.961910368,49.2261952 C1.01973375,47.5703503 2.4089364,46.2748978 4.06478134,46.3327212 L18.4941245,46.836605 C20.1499695,46.8944284 21.4454219,48.283631 21.3875985,49.9394759 C21.3297751,51.5953209 19.9405725,52.8907733 18.2847276,52.8329499 L6.85355684,52.4337647 L6.74448494,55.5571751 Z" id="leg_up" fill="#57FFFD" fill-rule="nonzero"></path>
+          </svg>
+          </div>
+          
 
          <!-- 
           - #TEAM
@@ -201,7 +215,7 @@
             <ul class="team-list">
 
               <li>
-                <a href="test.html" class="team-member">
+                <a href="ficheDavid.html" class="team-member">
                   <figure>
                   <div class="taillephoto"> <img src="./assets/images/david.jpg" > 
                   </figure>
@@ -210,7 +224,7 @@
               </li>
 
               <li>
-                <a href="#" class="team-member">
+                <a href="ficheFlorian.html" class="team-member">
                   <figure>
                     <div class="taillephoto"> <img src="./assets/images/flo.jpg" > 
                     </figure>
@@ -219,7 +233,7 @@
               </li>
 
               <li>
-                <a href="#" class="team-member">
+                <a href="ficheMatis.html" class="team-member">
                   <figure>
                   <div class="taillephoto"> <img src="./assets/images/matis.jpg" > 
                   </figure>
@@ -228,7 +242,7 @@
               </li>
 
               <li>
-                <a href="#" class="team-member">
+                <a href="ficheWilly.html" class="team-member">
                   <figure>
                   <div class="taillephoto"> <img src="./assets/images/willy.jpg" > 
                   </figure>
@@ -237,7 +251,7 @@
               </li>
 
               <li>
-                <a href="#" class="team-member">
+                <a href="ficheFred.html" class="team-member">
                   <figure>
                   <div class="taillephoto"> <img src="./assets/images/flo.jpg" > 
                   </figure>
@@ -246,7 +260,7 @@
               </li>
 
               <li>
-                <a href="#" class="team-member">
+                <a href="ficheJeremy.html" class="team-member">
                   <figure>
                   <div class="taillephoto"> <img src="./assets/images/flo.jpg" > 
                   </figure>

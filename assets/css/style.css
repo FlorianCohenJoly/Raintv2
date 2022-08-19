@@ -1,18 +1,4 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
 
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
 
 :root {
 
@@ -103,7 +89,9 @@ img,
 span,
 input,
 button,
-ion-icon { display: block; }
+ion-icon { display: block; 
+
+}
 
 button {
   font: inherit;
@@ -298,6 +286,7 @@ body.active { overflow-y: hidden; }
   visibility: hidden;
   z-index: 2;
   transition: var(--transition-2);
+  
 }
 
 
@@ -326,6 +315,7 @@ body.active { overflow-y: hidden; }
 .navbar-list {
   border-top: 1px solid hsla(0, 0%, 100%, 0.1);
   margin-bottom: 30px;
+  
 }
 
 .navbar-link {
@@ -1769,8 +1759,8 @@ body.active { overflow-y: hidden; }
 
 
 .taillephoto img{
-  height:250px;
-  width:200px;
+  height:280px;
+  width:270px;
   border-radius:50%;
 
 }
@@ -1783,3 +1773,112 @@ body.active { overflow-y: hidden; }
 
 
 
+.row{ 
+  border:3px solid;
+}
+
+.container .taillephoto img{
+  height:300px;
+  width:270px;
+  border-radius:50%;
+  border: 4px solid;
+}
+
+
+
+
+
+.canvas{
+  position:relative;
+  margin:40px auto;
+  width:400px;
+  height:84px;
+}
+#body,#head {
+  transform-origin:bottom left;
+  animation:playing_football_body 2s linear 0s infinite normal forwards running; 
+}
+#athlete_1 #leg_up {
+  transform-origin:top center;
+  animation:playing_football 4s linear 2s infinite normal forwards running; 
+}
+#athlete_1 #leg_down {
+  transform-origin:top center;
+  animation:playing_football 4s linear 0s infinite normal forwards running; 
+}
+#athlete_1 #ball {
+    transform:translatey(-5px);
+  animation:football 2s cubic-bezier(0.13, 0.57, 0.58, 1) 0s infinite normal forwards running; 
+}
+@keyframes playing_football {
+  0%,10%,50%,100% {
+    transform:translate(0,0);
+  }
+  93%{
+    transform:rotatez(5deg);
+  }
+  43% {
+    transform: rotatez(-5deg);
+  }
+  45% {
+    transform:rotatez(-10deg) translate(2px,-15px)
+  }
+}
+@keyframes football {
+  0%,100%{
+    transform:translatey(-5px);
+  }
+  86%{
+    transform:translatey(35px);
+  }
+}
+@keyframes playing_football_body {
+  0%,50%,100% {
+    transform: rotatez(0) translatey(0);
+  }
+  90% {
+    transform:rotate(2deg) translatey(2px);
+  }
+}
+#athlete_2 #leg_up {
+  transform-origin:34px 48px;
+  transform:rotatez(-92deg);
+  animation:playing_football_2 4s linear 2s infinite normal forwards running; 
+}
+#athlete_2 #leg_down {
+  transform-origin:34px 48px;
+  transform:rotatez(-92deg);
+  animation:playing_football_2 4s linear 0s infinite normal forwards running; 
+}
+#athlete_2 #ball {
+    transform:translatey(-5px);
+  animation:football_2 2s cubic-bezier(0.11, 0.57, 0.4, 0.97) 0s infinite normal forwards running; 
+}
+@keyframes playing_football_2 {
+  0%,10%,50%,100% {
+    transform:rotatez(-92deg);
+  }
+  93%{
+    transform:rotatez(-87deg);
+  }
+  43% {
+    transform: rotatez(0deg);
+  }
+  45% {
+    transform:rotatez(-148deg);
+  }
+}
+@keyframes football_2 {
+  0%,20%{
+    transform:translate(300px, -50px) scale(.8);
+  }
+  50%{
+    transform:translate(-272px,-50px) scale(1);
+  }
+  100%{
+    transform:translate(300px, -20px) scale(.8);
+  }
+  90%{
+    transform:translate(-272px,20px) scale(1);
+  }
+}
